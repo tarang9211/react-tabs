@@ -1,0 +1,25 @@
+{
+  "name": "react-tabs",
+  "version": "0.0.0",
+  "description": "Open source tab component for use in react apps.",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarang9211/react-tabs.git"
+  },
+  "keywords": [
+    "react",
+    "open-source",
+    "tabs",
+    "component"
+  ],
+  "author": "Tarang Hirani Rajiv Ram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarang9211/react-tabs/issues"
+  },
+  "homepage": "https://github.com/tarang9211/react-tabs#readme"
+}

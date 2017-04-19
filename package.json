@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "description": "Open source tab component for use in react apps.",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tarang9211/react-tabs.git"
@@ -21,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/tarang9211/react-tabs/issues"
   },
-  "homepage": "https://github.com/tarang9211/react-tabs#readme"
+  "homepage": "https://github.com/tarang9211/react-tabs#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  }
 }

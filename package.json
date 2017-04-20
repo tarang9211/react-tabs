@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "Open source tab component for use in react apps.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.development.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tarang9211/react-tabs.git"

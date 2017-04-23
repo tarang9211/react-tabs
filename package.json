@@ -4,7 +4,7 @@
   "description": "Open source tab component for use in react apps.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.development.js"
+    "dev": "webpack --config webpack.development.js"
   },
   "repository": {
     "type": "git",

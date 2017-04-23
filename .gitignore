@@ -9,4 +9,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Development files
-bundle.js
+examples/bundle.js

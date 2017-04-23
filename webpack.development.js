@@ -5,13 +5,12 @@ module.exports = {
   entry: path.join(__dirname, 'examples/index.js'),
   output: {
     path: path.join(__dirname, 'examples'),
-    publicPath: path.join(__dirname, 'examples'),
     filename: 'bundle.js',
   },
   module: {
     loaders: [
       {
-        test: /\.js&/,
+        test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
@@ -24,8 +23,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      title: 'Examples',
-      inject: 'body',
+      template: path.join(__dirname, 'examples/index.html'),
     }),
   ],
 };

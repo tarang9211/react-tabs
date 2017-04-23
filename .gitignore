@@ -10,3 +10,4 @@ yarn-error.log*
 
 # Development files
 examples/bundle.js
+examples/index.html

@@ -10,22 +10,29 @@ class Tabs extends Component {
     };
   }
 
-  renderTabs = () => {
-    const filteredTabs = this.props.children.filter(tab => tab.type === Tab);
-    return filteredTabs.map(tab => (
-      <Tab
-        title={tab.props.title}
-        key={tab.props.title}
-      >
-        {tab.props.children}
-      </Tab>
-      ));
+  renderTab = () => {
+    const filteredTabs = this.props.children.filter(item => item.type === Tab);
+    return (
+      <ul className="tablist">
+        {
+          filteredTabs.map((tab, index) =>
+            <li
+              key={tab.props.title}
+              className="tab_item"
+              onClick={() => { console.log(index) }}
+            >
+              <Tab title={tab.props.title}>{tab.props.children}</Tab>
+            </li>,
+          )
+        }
+      </ul>
+    );
   }
 
   render() {
     return (
       <div className="tabs">
-        {this.renderTabs()}
+        {this.renderTab()}
       </div>
     );
   }

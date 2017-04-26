@@ -14,20 +14,20 @@ class Tabs extends Component {
     const filteredTabs = this.props.children.filter(item => item.type === Tab);
     return (
       <ul className="tablist">
-        {
-          filteredTabs.map((tab, index) =>
-            <li
-              key={tab.props.title}
-              className="tab_item"
-              onClick={() => { console.log(index) }}
-            >
-              <Tab title={tab.props.title}>{tab.props.children}</Tab>
-            </li>,
-          )
-        }
+        {filteredTabs.map((tab, index) => (
+          <li
+            key={tab.props.title}
+            className="tab_item"
+            onClick={() => {
+              console.log(index);
+            }}
+          >
+            <Tab title={tab.props.title}>{tab.props.children}</Tab>
+          </li>
+        ))}
       </ul>
     );
-  }
+  };
 
   render() {
     return (

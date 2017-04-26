@@ -13,10 +13,7 @@ const Tab = (props) => {
 
 Tab.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
 };
 
 export default Tab;

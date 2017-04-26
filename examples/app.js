@@ -1,7 +1,15 @@
 import React from 'react';
+import { Tabs, Tab } from '../src/index';
 
 const App = () => (
-  <h3>Hello World!</h3>
+  <Tabs>
+    <Tab title="Tab One">
+      Lorem Ipsum
+    </Tab>
+    <Tab title="Tab Two">
+      Lorem Ipsum two
+    </Tab>
+  </Tabs>
 );
 
 export default App;
